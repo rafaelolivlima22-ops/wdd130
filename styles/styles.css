@@ -1,6 +1,11 @@
+nav {
+    background-color: steelblue;
+    padding: 0.5rem;
+
+}
+
 nav a {
     color: white;
-    background-color: steelblue;
     padding: 0.5rem;
     display: block;
 }
