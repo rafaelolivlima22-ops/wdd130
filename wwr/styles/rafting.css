@@ -21,14 +21,14 @@ body {
 header,
 main,
 footer {
-   width: 840px;
+   width: 1000px;
    margin: 0 auto;
 }
 
 h1,
 h2 {
    font-family: var(--heading-font);
-   color: var(--primary-color);
+   color: var(--secondary-color);
 }
 
 nav,
@@ -43,6 +43,10 @@ article {
    text-decoration: none;
 }
 
+.socialmedia img {
+   width: 60px;
+}
+
 .hero {
    position: relative;
 
@@ -54,10 +58,10 @@ article {
    height: auto;
 }
 
-h1 {
+.hero h1 {
    position: absolute;
    top: 20px;
-   width: 90%;
+   width: 100%;
    padding: 5px;
    text-align: center;
    opacity: 0.7;
@@ -65,7 +69,23 @@ h1 {
    color: #fff;
 }
 
+.hero article {
+   position: absolute;
+   top: 320px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 600px;
+   background-color: #ffffff89;
+}
+
+article p {
+   color: #000;
+}
+
 .hero article img {
    float: right;
-   width: 800px;
+   width: 200px;
+   padding: 8px 0 0 20px;
+   margin: 16px 0 0 0;
+
 }
