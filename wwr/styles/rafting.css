@@ -25,13 +25,26 @@ footer {
    margin: 0 auto;
 }
 
+header {
+   display: grid;
+   grid-template-columns: 150px 1fr;
+   align-items: center;
+   padding: 10px 0;
+
+}
+
 h1,
 h2 {
    font-family: var(--heading-font);
    color: var(--secondary-color);
 }
 
-nav,
+nav {
+   display: flex;
+   justify-content: flex-end;
+   gap: 30px;
+}
+
 p,
 section,
 article {
