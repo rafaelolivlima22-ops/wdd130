@@ -102,3 +102,50 @@ article p {
    margin: 16px 0 0 0;
 
 }
+
+h2 {
+   text-align: center;
+   margin: 30px 0;
+   color: var(--secondary-color);
+   font-family: var(--heading-font);
+}
+
+.history-container {
+   display: flex;
+   align-items: center;
+   gap: 100px;
+   margin: 20px 0;
+
+}
+
+.history-container img {
+   width: 200px;
+   height: auto;
+}
+
+.adventure-container {
+   display: flex;
+   justify-content: center;
+   gap: 100px;
+   margin-top: 20px;
+}
+
+.adventure-container figure {
+   flex: 1;
+   margin: 0;
+   text-align: center;
+
+}
+
+.adventure-container img {
+   width: 200px;
+   max-width: 180px;
+   height: 150px;
+   object-fit: cover;
+
+}
+
+.adventure-container figcaption {
+   font-size: 0.9em;
+   margin-top: 5px;
+}
