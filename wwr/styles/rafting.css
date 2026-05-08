@@ -162,3 +162,21 @@ h2 {
 .adventures h2 {
    grid-column: 1/-1;
 }
+
+.contact-main {
+   display: flex;
+
+}
+
+.map {
+   margin: 20px;
+   padding: 5px;
+}
+
+.img {
+   width:
+   ;
+
+}
+
+section {}
