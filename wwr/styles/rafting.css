@@ -39,7 +39,7 @@ article {
 
 footer {
    display: grid;
-   grid-template-columns: 4fr 1fr;
+   grid-template-columns: 1fr;
    gap: 1em;
    align-items: center;
    background-color: #3e3e3e;
