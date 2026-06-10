@@ -164,3 +164,30 @@ h2 {
 .adventures h2 {
    grid-column: 1/-1;
 }
+
+.contact {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.map {
+   margin: 20px;
+   padding: 10px;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+}
+
+section h1 {
+   display: flex;
+   justify-content: center;
+}
+
+img {
+   display: flex;
+   flex-direction: row;
+   width: 150px;
+}
