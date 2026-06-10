@@ -171,14 +171,13 @@ h2 {
    flex-direction: column;
 }
 
-.map {
-   margin: 20px;
-   padding: 10px;
+.map iframe {
+   border: 0;
 }
 
 form {
-   display: flex;
-   flex-direction: column;
+   display: grid;
+   grid-template-columns:
 }
 
 section h1 {
