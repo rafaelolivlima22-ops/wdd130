@@ -165,27 +165,68 @@ h2 {
    grid-column: 1/-1;
 }
 
-.contact {
+/* 1. Centraliza o topo */
+.contact-header {
+   text-align: center;
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+
+/* 2. Cria o Grid apenas para o Mapa e Form */
+.contact-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 40px;
+   max-width: 900px;
+   margin: 0 auto;
+   align-items: start;
+}
+
+/* 3. Organiza o formulário */
+.form-container form {
    display: flex;
-   justify-content: center;
    flex-direction: column;
+   gap: 12px;
+   max-width: 400px;
+   width: 100%;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container select,
+.form-container textarea {
+   width: 100%;
+   padding: 8px;
+   box-sizing: border-box;
+}
+
+/* 4. Alinha a seção de fotos lá embaixo */
+section {
+   text-align: center;
+   margin-top: 50px;
+   border-top: 1px solid #ccc;
+   padding-top: 30px;
+}
+
+section div {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 30px;
+   margin-top: 20px;
+}
+
+section img {
+   width: 250px;
+   height: 250px;
+   object-fit: cover;
+   border-radius: 4px;
+   padding: 50px;
 }
 
 .map iframe {
    border: 0;
-}
-
-form {
-   display: grid;
-}
-
-section h1 {
-   display: flex;
-   justify-content: center;
-}
-
-img {
-   display: flex;
-   flex-direction: row;
-   width: 150px;
+   width: 100%;
+   max-width: 450px;
+   height: 450px;
 }
