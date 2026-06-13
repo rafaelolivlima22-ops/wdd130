@@ -230,3 +230,156 @@ section img {
    max-width: 450px;
    height: 450px;
 }
+
+/* Container que envolve os três blocos de viagem */
+.trips-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   /* Mantém 3 colunas responsivas */
+   gap: 20px;
+   /* Espaçamento entre os cards */
+   max-width: 1100px;
+   /* Centraliza o conteúdo */
+   margin: 40px auto;
+   padding: 0 20px;
+}
+
+/* Estilo de cada card de viagem */
+.trip-card {
+   background-color: #ffffff;
+   border-radius: 8px;
+   /* Cantos arredondados */
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   /* Sombra suave */
+   overflow: hidden;
+   /* Garante que nada saia do card */
+   display: flex;
+   /* Para alinhar imagem e texto verticalmente */
+   flex-direction: column;
+   width: 100%;
+   /* Ocupa a largura da coluna do grid */
+}
+
+.trip-card:hover {
+   transform: translateY(-5px);
+   /* Efeito suave ao passar o mouse */
+}
+
+.trip-card img {
+   width: 100%;
+   height: 60%;
+   /* A imagem ocupa 60% da altura do card quadrado */
+   object-fit: cover;
+   /* Recorta a imagem para preencher o espaço sem distorcer */
+   display: block;
+}
+
+.trip-card-content {
+   padding: 15px;
+   height: 40%;
+   /* O texto ocupa os 40% restantes da altura */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   /* Centraliza o texto verticalmente */
+   text-align: center;
+}
+
+.trip-card h3 {
+   margin-top: 0;
+   margin-bottom: 5px;
+   font-size: 1.1rem;
+   color: #004e64;
+}
+
+/* Estilo para alinhar o texto sobreposto na imagem principal (Hero), se desejar */
+.hero-container {
+   position: relative;
+   text-align: center;
+}
+
+.hero-image {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+
+/* --- GRID DAS VIAGENS (Evita a coluna simples obrigatória) --- */
+.trips-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 30px;
+   max-width: 1200px;
+   margin: 50px auto;
+   padding: 0 20px;
+}
+
+/* Estilo de cada Card individual */
+.trip-card {
+   background-color: #ffffff;
+   border: 1px solid #e0e0e0;
+   border-radius: 8px;
+   overflow: hidden;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+   transition: transform 0.2s ease;
+}
+
+.trip-card:hover {
+   transform: translateY(-5px);
+   /* Efeito sutil ao passar o mouse */
+}
+
+.trip-card img {
+   width: 100%;
+   height: 220px;
+   object-fit: cover;
+   /* Faz a foto se adaptar ao espaço sem distorcer */
+}
+
+.trip-card-content {
+   padding: 20px;
+}
+
+.trip-card h3 {
+   margin-top: 0;
+   margin-bottom: 10px;
+   color: #004e64;
+   /* Troque pela cor principal do seu projeto */
+}
+
+.trip-card p {
+   font-size: 0.9rem;
+   color: #666;
+   line-height: 1.4;
+   margin: 0;
+
+}
+
+/* --- BANNER DE CHAMADA PARA AÇÃO (CTA) --- */
+.cta-banner {
+   background-color: #004e64;
+   /* Cor de fundo escura de destaque */
+   color: white;
+   text-align: center;
+   padding: 40px 20px;
+   margin: 40px auto;
+   max-width: 1200px;
+   border-radius: 8px;
+}
+
+.cta-button {
+   display: inline-block;
+   background-color: #ff5a5f;
+   /* Cor chamativa para o botão */
+   color: white;
+   padding: 12px 25px;
+   text-decoration: none;
+   font-weight: bold;
+   border-radius: 5px;
+   margin-top: 15px;
+   transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+   background-color: #e0484d;
+}
