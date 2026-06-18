@@ -378,17 +378,16 @@ body.home-page .hero > img {
    height: 450px;
 }
 
-body.home-page .adventures {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 20px;
+body.home-page .adventures h2 {
+   background-color: #666;
+   color: #ffffff;
+   padding: 25px 30px;
    margin: 40px auto;
-   width: 1000px;
-}
-
-body.home-page .adventures figure img {
-   width: 400px;
-   height: 150px;
-   object-fit: cover;
-   border-radius: 6px;
+   border-radius: px;
+   width: 450px;
+   height: 250x;
+   max-width: 900px;
+   text-align: center;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+   line-height: 1.5;
 }
