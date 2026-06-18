@@ -143,25 +143,78 @@ h2 {
 }
 
 .history img {
-   width: 200px;
+   width: 450px;
    height: auto;
 }
 
-.adventures img {
-   width: 200px;
-   max-width: 180px;
-   height: 150px;
-   object-fit: cover;
+.history h2 {
+   background-color: #ccc;
 }
 
+.history p {
+   background-color: #f9f9f9;
+   /* Cor de fundo leve para a caixa */
+   border: 1px solid #ccc;
+   /* Linha da borda fina cinzenta */
+   padding: 15px;
+   /* Espaço interno para o texto não colar na borda */
+   border-radius: 5px;
+   /* Cantos ligeiramente arredondados */
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+   /* Uma sombra bem suave */
+}
+
+.titulo-adventure {
+   background-color: #e0f2fe;
+   /* Um azul bem clarinho para combinar com as fotos */
+   color: #0369a1;
+   /* Letra azul escura */
+   padding: 12px 20px;
+   /* Espaçamento em cima/baixo e lados */
+   text-align: center;
+   border-radius: 4px;
+   margin-bottom: 25px;
+   display: block;
+   /* Garante que a faixa pegue de ponta a ponta */
+}
+
+/* --- ESTILOS GERAIS DA INDEX (Mantém o padrão original) --- */
 .adventures {
    display: grid;
    grid-template-columns: repeat(5, 1fr);
    gap: 1em;
 }
 
-.adventures h2 {
-   grid-column: 1/-1;
+.adventures img {
+   width: 100%;
+   height: auto;
+   /* Deixa a index gerenciar a altura naturalmente */
+   object-fit: cover;
+}
+
+/* --- FORMATAÇÃO COMPLETA E EXCLUSIVA DA PÁGINA ABOUT --- */
+.caixas-about {
+   display: grid !important;
+   grid-template-columns: repeat(5, 1fr) !important;
+   gap: 1em !important;
+}
+
+.caixas-about figure {
+   width: 100% !important;
+   max-width: 100% !important;
+   margin: 0 !important;
+   border: 1px solid #ddd !important;
+   padding: 10px !important;
+   background-color: #fff !important;
+   box-sizing: border-box !important;
+}
+
+.caixas-about img {
+   width: 100% !important;
+   max-width: 100% !important;
+   height: 150px !important;
+   object-fit: cover !important;
+   display: block !important;
 }
 
 /* Contact us Page*/
@@ -378,30 +431,55 @@ body.home-page .hero > img {
    height: 450px;
 }
 
-/* ---- Ajuste das 2 Imagens no meio ---- */
+/* ---- Ajuste 1 Imagem no meio ---- */
 
-body.home-page .adventures img {
-   width: 260%;
-   height: 260px;
+/* 1. Estiliza a seção (o container pai que centraliza a foto) */
+.adventures {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 40px auto;
+}
+
+/* 2. Estiliza o tamanho e formato da imagem em si */
+.adventures img {
+   width: 500px !important;
+   max-width: 100% !important;
+   height: 500px;
    object-fit: cover;
    border-radius: 8px;
+}
+
+.adventures p {
+   margin-top: 15px;
+   text-align: center;
+   font-size: 1.2rem;
+
+   font-size: 24px;
+   font-weight: bold;
+   text-transform: uppercase;
+   color: #333333;
+
 }
 
 /* ---- Correção Completa do Banner de Destaque ---- */
 .home-page-container {
    background-color: #e6d3b8;
-   /* Cor de fundo bege */
+   /* Mantém a cor de fundo bege */
    width: 1000px;
    height: 420px;
    /* Altura controlada para caber tudo */
    margin: 50px auto;
    position: relative;
 
-   /* CORRIGIDO O CAMINHO COM ../ E AS LETRAS MINÚSCULAS DA IMAGEM */
-   background-image: url('../images/rafting-brotas-sp.jpg');
-   background-size: 40% 85%;
+   /* Configuração perfeita da imagem pequena à esquerda */
+   background-image: url('../images/rafting-brotas-sp%20(1).jpg');
+   background-size: 410px 420px;
+   /* Define a largura (550px) e altura exata da imagem */
    background-repeat: no-repeat;
-   background-position: 50px center;
+   background-position: left center;
+   /* Força a foto a ficar colada na esquerda */
 }
 
 /* Garante que a caixa cinzenta fique bem posicionada e centralizada à direita */
