@@ -379,23 +379,12 @@ body.home-page .hero > img {
 }
 
 /* ---- Ajuste das 2 Imagens no meio ---- */
-body.home-page .adventures figure {
-   width: 100% !important;
-   /* Libera o espaço do figure */
-   margin: 0 !important;
-   /* Garante que não haja margens */
-}
 
-body.home-page .adventures figure img {
-   /* Força a imagem a ocupar TODA a largura da coluna */
-   width: 100% !important;
-
-   /* Aumenta a altura para acompanhar a largura e parecer realmente grande */
-   height: 400px !important;
-
-   object-fit: cover !important;
+body.home-page .adventures img {
+   width: 260%;
+   height: 260px;
+   object-fit: cover;
    border-radius: 8px;
-   /* Cantos um pouco mais arredondados para um visual mais moderno */
 }
 
 /* ---- Correção Completa do Banner de Destaque ---- */
