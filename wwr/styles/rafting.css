@@ -378,16 +378,100 @@ body.home-page .hero > img {
    height: 450px;
 }
 
-body.home-page .adventures h2 {
-   background-color: #666;
-   color: #ffffff;
-   padding: 25px 30px;
-   margin: 40px auto;
-   border-radius: px;
-   width: 450px;
-   height: 250x;
-   max-width: 900px;
+/* ---- Ajuste das 2 Imagens no meio ---- */
+body.home-page .adventures figure {
+   width: 100% !important;
+   /* Libera o espaço do figure */
+   margin: 0 !important;
+   /* Garante que não haja margens */
+}
+
+body.home-page .adventures figure img {
+   /* Força a imagem a ocupar TODA a largura da coluna */
+   width: 100% !important;
+
+   /* Aumenta a altura para acompanhar a largura e parecer realmente grande */
+   height: 400px !important;
+
+   object-fit: cover !important;
+   border-radius: 8px;
+   /* Cantos um pouco mais arredondados para um visual mais moderno */
+}
+
+/* ---- Correção Completa do Banner de Destaque ---- */
+.home-page-container {
+   background-color: #e6d3b8;
+   /* Cor de fundo bege */
+   width: 1000px;
+   height: 420px;
+   /* Altura controlada para caber tudo */
+   margin: 50px auto;
+   position: relative;
+
+   /* CORRIGIDO O CAMINHO COM ../ E AS LETRAS MINÚSCULAS DA IMAGEM */
+   background-image: url('../images/rafting-brotas-sp.jpg');
+   background-size: 40% 85%;
+   background-repeat: no-repeat;
+   background-position: 50px center;
+}
+
+/* Garante que a caixa cinzenta fique bem posicionada e centralizada à direita */
+.banner-box {
+   position: absolute;
+   right: 40px;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: #616e60;
+   /* Cor cinzenta/verde escura */
+   color: white;
+   width: 400px;
+   padding: 25px;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    text-align: center;
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-   line-height: 1.5;
+}
+
+/* Formatação dos textos de dentro da caixa */
+.banner-box h2 {
+   margin: 0 0 10px 0;
+   font-size: 1.4rem;
+   color: #ffffff;
+}
+
+.banner-box p {
+   font-size: 0.9rem;
+   line-height: 1.4;
+   margin: 0 0 15px 0;
+}
+
+/* Configuração da miniatura que fica dentro da caixa cinzenta */
+.banner-inline-figure {
+   margin: 0 0 15px 0;
+   width: 100%;
+}
+
+.banner-inline-figure img {
+   width: 160px;
+   height: 110px;
+   object-fit: cover;
+
+}
+
+.banner-inline-figure figcaption {
+   color: #ffffff;
+   font-size: 0.8rem;
+   margin-top: 5px;
+}
+
+/* CORRIGIDO O NOME DA CLASSE PARA .banner-btn PARA CASAR COM O HTML */
+.banner-btn {
+   background-color: #e6d3b8;
+   color: #333;
+   border: none;
+   padding: 10px 20px;
+   font-weight: bold;
+   cursor: pointer;
+   border-radius: 4px;
 }
